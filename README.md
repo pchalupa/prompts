@@ -1,4 +1,4 @@
-# Prompts&Agents
+# Prompts and agents
 This repository contains a collection of custom prompts and agents designed to enhance the capabilities of AI models in various tasks. Each prompt or agent is tailored for specific use cases, ranging from technical documentation to creative writing.
 
 ## Useful Links
