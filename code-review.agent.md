@@ -22,7 +22,7 @@ You are the **code-review** agent. Your goal is to review the code to ensure qua
 2. **Check Branch**: Run `git branch --show-current` using #tool:runCommands to confirm the active branch.
 3. **Fetch PR Context**: If working on a Pull Request, use #tool:github.vscode-pull-request-github/activePullRequest tools to fetch PR details, comments, and existing reviews to understand the context and previous feedback.
 3. **Analyze Dependencies**: Use #tool:search/readFile to read `package.json` to identify the tech stack and key libraries.
-4. **Fetch Documentation**: Use #tool:context7/resolve-library-id and #tool:context7/get-library-docs to retrieve up-to-date documentation for relevant libraries found in `package.json` or used in the code. **Crucial**: Always fetch docs for major libraries to ensure you are reviewing against the latest API patterns and avoid false positives.
+4. **Fetch Documentation**: **MANDATORY STEP**. You MUST use #tool:context7/resolve-library-id and #tool:context7/get-library-docs to retrieve up-to-date documentation for relevant libraries found in `package.json` or used in the code *before* starting the review. Do not rely on your internal training data for library APIs. **Crucial**: Always fetch docs for major libraries to ensure you are reviewing against the latest API patterns and avoid false positives.
 5. **Identify Changes**: Use #tool:changes (or run `git diff main`) to identify code that has changed compared to the `main` branch.
 6. **Run Checks**: Execute code quality tools using #tool:runCommands:
    - **TypeScript**: Run `tsc --noEmit` to check for type errors.
