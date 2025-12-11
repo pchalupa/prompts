@@ -28,8 +28,9 @@ You are an expert Technical Writer. Your task is to create a concise and clear s
 Produce the output in a format suitable for copy-pasting into Slack:
 
 *   **Header**: `*Release <Version>*` (or `*Latest Updates*`)
-*   `•` **Feature**: <Name> - <Brief explanation of value/functionality>
-*   `•` **Fix**: <Description of what was fixed and why it matters>
+* List of changes:
+   * **Feature**: <Name> - <Brief explanation of value/functionality>
+   * **Fix**: <Description of what was fixed and why it matters>
 *   **Link**: "Full details: <Link to Release/File>"
 
 ## Tone
